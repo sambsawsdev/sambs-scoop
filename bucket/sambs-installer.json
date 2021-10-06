@@ -1,10 +1,10 @@
 ﻿{
-    "version":  "0.0.1",
+    "version":  "0.0.2",
     "license":  "https://github.com/sambsawsdev/sambs-installer/blob/main/LICENSE",
-    "extract_dir":  "sambsawsdev-sambs-installer-0715e30",
-    "url":  "https://github.com/sambsawsdev/sambs-installer/zipball/main/sambsawsdev-sambs-installer-0715e30.zip",
+    "extract_dir":  "sambsawsdev-sambs-installer-631a5cf",
+    "url":  "https://github.com/sambsawsdev/sambs-installer/zipball/main/sambsawsdev-sambs-installer-631a5cf.zip",
     "homepage":  "https://github.com/sambsawsdev/sambs-installer",
-    "hash":  "sha256:E533D00BC2FDDB6E65F297AD739FADDE57F6D4AA64B65F49B026890B7D3FD1D2",
+    "hash":  "sha256:B966DA4033984C1C3191069084450B4679149835C6516BB225FF857F00EFFA36",
     "bin":  "sambs-installer.cmd",
     "persist": "package"
 }
