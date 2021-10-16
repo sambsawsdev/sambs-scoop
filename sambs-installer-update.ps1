@@ -1,6 +1,6 @@
 Param(
     [Parameter(Mandatory=$false, Position=0)]
-    [string]$branch='main'
+    [string]$branch='develop'
 )
 
 class SambsInstaller {
@@ -10,8 +10,8 @@ class SambsInstaller {
     [string]$url = 'https://github.com/sambsawsdev/sambs-installer/archive/main.zip'
     [string]$homepage = 'https://github.com/sambsawsdev/sambs-installer'
     [string]$hash = 'sha256:'
-    [string]$bin = 'sambs-installer.cmd'
-    [string]$persist = 'package'
+    [string[]]$bin = @("sambs-installer.cmd", "sambs-installer-uninstall.cmd")
+    #[string]$persist = 'package'
 
     [string] toString() {
         return $this | ConvertTo-Json -Depth 2
