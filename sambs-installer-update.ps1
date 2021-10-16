@@ -78,6 +78,7 @@ function Update-Installer {
                 $sambsInstaller.version = "$($version.Major).$($version.Minor).$($version.Build+1)"
             } 
 
+            $sambsInstaller | ConvertTo-Json -Depth 2 | Out-File -FilePath $sambsInstallerJsonFilePath -Force
             Write-Log "$($sambsInstaller.ToString())"
             Write-Log 'completed.'
         } catch {
