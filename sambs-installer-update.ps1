@@ -28,13 +28,13 @@ function Update-Installer {
         try {
             Write-Log 'starting...'
 
-            # Use env:sambsHome or the default <userHome>/.sambs
-            if ([string]::IsNullOrWhiteSpace($env:sambsHome)) {
-                $env:sambsHome = Join-Path -Path $HOME -ChildPath '/.sambs'
+            # Use env:SAMBS_HOME or the default <userHome>/.sambs
+            if ([string]::IsNullOrWhiteSpace($env:SAMBS_HOME)) {
+                $env:SAMBS_HOME = Join-Path -Path $HOME -ChildPath '/.sambs'
             }
 
             # Create the download directory
-            [string]$installerUpdatePath = Join-Path -Path $env:sambsHome -ChildPath '/installer-update'
+            [string]$installerUpdatePath = Join-Path -Path $env:SAMBS_HOME -ChildPath '/installer-update'
             $null = New-Item -Path $installerUpdatePath -ItemType Directory -Force
             
             # Download the sambs-installer zip file
